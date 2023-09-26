@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Currency Converter</title>
+    <script src="exchange.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Currency Converter</h1>
+        
+        
+        <div class="select_container">
+            <h5 class="title one">From</h5>
+            <select id="currencyHave">
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+                <option value="CNY">CNY</option>
+                <option value="HKD">HKD</option>
+                <option value="USD">USD</option>
+            </select>
+            <h5 class="title two">To</h5>
+            <select id="currencyWant">
+                <option value="EUR">EUR</option>
+                <option value="CNY">CNY</option>
+                <option value="HKD">HKD</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+        <input type="number" id="amount" placeholder="Enter amount" autofocus>
+        <button id="convert">Convert</button>
+        <input id="result" readonly><i class="fa-solid fa-copy"></i>
+        <div class="setting-container">    
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4>Background Colour</h4>
+          <input type="color" id="setting-colour-background">
+          <h4>Title Colour</h4>
+          <input type="color" id="setting-colour-title">
+          <button class="confirm">Confirm</button>
+        </div>
+      
+    </div>
+
+    
+      
+    
+</body>
+</html>

@@ -5,3 +5,5 @@ Purpose of Project: To make a clean looking currency exchange extension that can
 Problems and fixes: The background colours resetted everytime you reopened the app. This was fixed after I learnt about local storage which I then implemented to my code.
 
 Future improvements: Add all currencies Add favourite currencies
+
+To use just download the code as zip and then import it to chrome extensions. Enjoy!
